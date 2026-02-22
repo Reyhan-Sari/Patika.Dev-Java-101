@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class kdvTutarı {public static void main(String[] args){
+		Scanner input = new Scanner(System.in);
+		
+		System.out.print("Lütfen ücret tutarını giriniz: ");
+		double ucret = input.nextDouble();
+		double KDV=0;
+		
+		if ((ucret>0) && (ucret<=1000)) {
+			KDV =0.18;
+		}else if ((ucret>1000)) {
+			KDV=0.08;
+		}else {
+			System.out.println("Lütfen geçerli bir sayı giriniz.");
+		}
+		double KDV_tutarı = ucret*KDV;
+		double toplamFiyat = ucret+KDV_tutarı;
+		double KDVsiz_fiyat = ucret-KDV_tutarı;
+		
+		System.out.println("KDV oranı : " + KDV);
+		System.out.println("KDV tutarı : " + KDV_tutarı);
+		System.out.println("KDV'siz fiyat : " + KDVsiz_fiyat);
+		System.out.println("KDV'li fiyat : " + toplamFiyat);		
+	}
+}
