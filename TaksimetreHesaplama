@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class TaksimetreHesaplama {
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+
+      double start = 20.0;
+      double perKM = 2.40;
+
+      System.out.println("Mesafeyi KM Tğrğnden Giriniz : ");
+      double KM = scanner.nextDouble();
+      double price = start + (KM*perKM);
+      if (price<30) {
+          System.out.println("Toplam Tutar : 30TL");
+      }else {
+          System.out.println("Toplam Tutar :" + price + "TL");
+      }
+  }
+}
