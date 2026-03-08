@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+  public class ManavKasaProogramı {
+    public static void main(String[] args) {
+      Scanner scanner = new Scanner(System.in);
+
+     double armut = 2.14, elma = 3.67, domates = 1.11, muz = 0.95, patlican = 5.00, total = 0,kilo;
+
+      System.out.print("Armut Kaç Kilo ? : 0 ");
+      double k1 = scanner.nextDouble();
+      System.out.print("Elma Kaç Kilo ? : 1 ");
+      double k2 = scanner.nextDouble();
+      System.out.print("Domates Kaç Kilo ? : 1 ");
+      double k3 = scanner.nextDouble();
+      System.out.print("Muz Kaç Kilo ? : 2 ");
+      double k4 = scanner.nextDouble();
+      System.out.print("Patlıcan Kaç Kilo ? : 3 ");
+      double k5 = scanner.nextDouble();
+
+      double totalCost = ("Armut*k1")+("Elma*k2")+("Domates*k3")+("Muz*k4")+("Patlıcan*k5");
+      System.out.prinln("Toplam Tutar : " + totalCost + "TL");
+    }
+  }
