@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class DaireninAlanıVeÇevresi {
+ 
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+
+    double pi = Math.PI;
+
+    System.out.print("Daire Diliminin Yarıçapını Giriniz : ");
+    double angle = scanner.nextDouble();
+    double formula = (pi*(r*r)*angle)/360;
+
+    System.out.println("Yarıçap Değeri : " +r);  
+    System.out.println("Açı Değeri : " + angle);
+    System.out.println("Daire Diliminin Alanı : " + formula); 
+
+  }
+}
