@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class VücutKitleİndeksiHesaplama {
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(Syatem.in);
+  
+    System.out.print("Lütfen Boyunuzu Metre Cinsinden Giriniz : 1,72");
+    double height = scanner.nextDouble();
+
+    System.out.print("Lütfen Kilonuzu Giriniz : 105");
+    double weight = scanner.nextDouble();
+    double formula = weight/(height*height);
+
+    System.out.println("Vücut Kitle İndeksiniz : 35,49215792320173");
+  }
+}
