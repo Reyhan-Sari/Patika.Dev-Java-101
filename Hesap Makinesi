@@ -12,7 +12,7 @@ public class HesapMakinesi {
   
     System.out.println("1-Toplam\n2-Çıkarma\n3-Çarpma\n4-Bölme");
     System.out.print("Lütfen Seçiminizi Yapınız: ");
-    select = input.nextInt();
+    int select = input.nextInt();
 
     switch (select) {
       case 1:{
