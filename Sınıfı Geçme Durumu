@@ -1,0 +1,59 @@
+import java.util.Scanner;
+
+public class SınıfıGeçmeDurumu {
+
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+
+    System.out.print("Matematik notunuz : ");
+    int mat = scanner.nextInt();
+
+    System.out.print("Türkçe notunuz : ");
+    int turkce = scanner.nextInt();
+
+    System.out.print("Fizik notunuz : ");
+    int fizik = scanner.nextInt();
+
+    System.out.print("Kimya notunuz : ");
+    int kimya = scanner.nextInt();
+
+    System.out.print("Müzik notunuz : ");
+    int muzik = scanner.nextInt();
+
+    double total = (mat + turkce + fizik + kimya + muzik);
+    int totalDersSayısı = 5;
+
+    if (mat < 0 || mat > 100) {
+      total = total - mat;
+      totalDersSayısı--;
+    }
+
+    if (turkce < 0 || turkce > 100) {
+      total = total - turkce;
+      totalDersSayısı--;
+    }
+
+    if (fizik < 0 || fizik > 100) {
+      total = total - fizik;
+      totalDersSayısı--;
+    }
+
+    if (kimya < 0 || kimya > 100) {
+      total = total - kimya;
+      totalDersSayısı--;
+    }
+
+    if (muzik < 0 || muzik > 100) {
+      total = total - muzik;
+      totalDersSayısı--;
+    }
+
+    double average = total / totalDersSayısı;
+    if (average > 55) {
+      System.out.println("Dersten geçtiniz tebrikler!");
+    } else {
+        System.out.println("Dersten kaldınız!");
+    }
+    System.out.print("Not ortalamanız : " average);
+  }
+}
