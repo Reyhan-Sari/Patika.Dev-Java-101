@@ -1,0 +1,129 @@
+import java.util.Scanner;
+
+public class BurçBulanProgram {
+
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+
+    System.out.print("Lütfen doğduğunuz ayı giriniz : ");
+    String month = scanner.nextLine();
+    month = month.toLowerCase();
+    System.out.print("Lütfen doğduğunuz günü giriniz : ");
+    int day = scanner.next.Int();
+
+    if (month.equals("Ocak")){
+
+      if((day>=1) && (day<==21)) {
+        System.out.println("Burcunuz Oğlak");
+      } else if(day<=31) {
+          System.out.println("Burcunuz Kova");
+      } else {
+        Ssytem.out.println("Girdiğiniz gün geçersizdir!");
+      }
+
+    } else if (month.equals("Şubat")) {
+
+      if ((day>=1) && (day<=19)) {
+          System.out.println("Burcunuz Kova");
+      } else if (day<=28) {
+          System.out.println("Burcunuz Balık");
+      } else {
+          System.out.println("Girdiğiniz gün geçersizdir!");
+      }
+
+    } else if (month.equals("Mart")) {
+
+      if ((day>=1) && (day<=20)) {
+          System.out.println("Burcunuz Balık");
+      } else if (day<=31) {
+          System.out.println("Burcunuz Koç");
+      } else {
+          System.out.println("Girdiğiniz gün geçersizdir!");
+      }
+
+  }  else if (month.equals("Nisan")) {
+
+      if ((day>=1) && (day<=20)) {
+          System.out.println("Burcunuz Koç");
+      } else if (day<=30) {
+          System.out.println("Burcunuz Boğa");
+      } else {
+          System.out.println("Girdiğiniz gün geçersizdir!");
+      }
+  } else if (month.equals("Mayıs")) {
+
+      if ((day>=1) && (day<=21)) {
+          System.out.println("Burcunuz Boğa");
+      } else if (day<=31) {
+          System.out.println("Burcunuz İkizler");
+      } else {
+          System.out.println("Girdiğiniz gün geçersizdir!");
+      }
+  } else if (month.equals("Haziran")) {
+
+      if ((day>=1) && (day<=22)) {
+          System.out.println("Burcunuz İkizler");
+      } else if (day<=30) {
+          System.out.println("Burcunuz Yengeç");
+      } else {
+          System.out.println("Girdiğiniz gün geçersizdir!");
+      }
+  } else if (month.equals("Temmuz")) {
+
+      if ((day>=1) && (day<=22)) {
+          System.out.println("Burcunuz Yengeç");
+      } else if (day<=31) {
+          System.out.println("Burcunuz Aslan");
+      } else {
+          System.out.println("Girdiğiniz gün geçersizdir!");
+      }
+  } else if (month.equals("Ağustos")) {
+
+      if ((day>=1) && (day<=22)) {
+          System.out.println("Burcunuz Aslan");
+      } else if (day<=31) {
+          System.out.println("Burcunuz Başak");
+      } else {
+          System.out.println("Girdiğiniz gün geçersizdir!");
+      }
+  } else if (month.equals("Eylül")) {
+
+      if ((day>=1) && (day<=22)) {
+          System.out.println("Burcunuz Başak");
+      } else if (day<=30) {
+          System.out.println("Burcunuz Terazi");
+      } else {
+          System.out.println("Girdiğiniz gün geçersizdir!");
+      }
+  } else if (month.equals("Ekim")) {
+
+      if ((day>=1) && (day<=22)) {
+          System.out.println("Burcunuz Terazi");
+      } else if (day<=31) {
+          System.out.println("Burcunuz Akrep");
+      } else {
+          System.out.println("Girdiğiniz gün geçersizdir!");
+      }
+  } else if (month.equals("Kasım")) {
+
+      if ((day>=1) && (day<=21)) {
+          System.out.println("Burcunuz Akrep");
+      } else if (day<=30) {
+          System.out.println("Burcunuz Yay");
+      } else {
+          System.out.println("Girdiğiniz gün geçersizdir!");
+      }
+  } else if (month.equals("Aralık")) {
+
+      if ((day>=1) && (day<=22)) {
+          System.out.println("Burcunuz Yay");
+      } else if (day<=31) {
+          System.out.println("Burcunuz Oğlak");
+      } else {
+          System.out.println("Girdiğiniz gün geçersizdir!");
+      }
+  } else {
+      System.out.println("Lütfen geçerli bir ay giriniz!");
+   }
+ } 
+}
