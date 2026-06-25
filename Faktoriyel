@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class Faktoriyel {
+    static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+       // int sonuc = 1;
+//        for (int i= 1; i <= 5 ; i++) {
+//             sonuc = sonuc * i;
+//            System.out.println(sonuc);
+//        }
+
+        System.out.println("n değerini giriniz: ");
+        int n = scan.nextInt();
+        System.out.println("r değerini giriniz: ");
+        int r = scan.nextInt();
+
+        long sonucN = 1;
+        for (int i = 1; i <= n ; i++) {
+            sonucN = i * sonucN;
+
+        }
+
+
+        long sonucR = 1;
+        for (int j = 1; j <= r ; j++) {
+            sonucR = j * sonucR;
+        }
+
+        long nEksiRSonuc = 1;
+        int nEksiR = n - r;
+        for (int k = 1; k <= nEksiR ; k++) {
+            nEksiRSonuc = k * nEksiRSonuc;
+        }
+
+
+        System.out.println(sonucN / ((sonucR * (nEksiRSonuc))));
+
+    }
+}
