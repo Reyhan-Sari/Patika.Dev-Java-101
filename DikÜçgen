@@ -1,0 +1,16 @@
+import java.util.Scanner;
+import java.lang.Math;
+public class HipotenusHesapla {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+    int a,b;
+    double c;
+        System.out.println("a kenarını giriniz: ");
+        a = scan.nextInt();
+        System.out.println("b kenarını giriniz ");
+        b = scan.nextInt();
+
+        c = Math.sqrt(Math.pow(a,2) + Math.pow(b,2));
+        System.out.println("c = " + c);
+    }
+}
